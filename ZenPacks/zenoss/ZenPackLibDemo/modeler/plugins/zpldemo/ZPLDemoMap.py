@@ -12,7 +12,8 @@ class ZPLDemoMap(PythonPlugin):
             RelationshipMap(
                 modname="ZenPacks.zenoss.ZenPackLibDemo.SubComponent",
                 relname="subComponents",
-                objmaps=[ObjectMap({'id': 'subComponent-1',
+                objmaps=[ObjectMap({'id': prepId('subComponent-1'),  # use prep id to have a url safe id
+                                    'title': 'subComponent-1',       # title doesnt need to be url safe
                                     'basic_string': 'Sub Text',
                                     'basic_int': 1,
                                     'basic_boolean': True,
@@ -20,7 +21,8 @@ class ZPLDemoMap(PythonPlugin):
             RelationshipMap(
                 modname="ZenPacks.zenoss.ZenPackLibDemo.AuxComponent",
                 relname="auxComponents",
-                objmaps=[ObjectMap({'id': 'auxComponent-1',
+                objmaps=[ObjectMap({'id': prepId('auxComponent-1'),
+                                    'title': 'auxComponent-1',
                                     'basic_string': 'Aux Text',
                                     'basic_int': 2,
                                     'basic_boolean': False,
