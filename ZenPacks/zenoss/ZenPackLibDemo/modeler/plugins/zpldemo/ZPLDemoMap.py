@@ -1,3 +1,7 @@
+""" 
+strings added here will show up in gui when you select the plugin
+"""
+
 from Products.DataCollector.plugins.CollectorPlugin import PythonPlugin
 from Products.DataCollector.plugins.DataMaps import ObjectMap, RelationshipMap
 
